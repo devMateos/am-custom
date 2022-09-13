@@ -14,6 +14,7 @@ module.exports = {
     quotes: ["error", "double"],
     semi: ["error", "always"],
     "comma-dangle": ["error", "only-multiline"],
-    "space-before-function-paren": ["error", "never"]
+    "space-before-function-paren": ["error", "never"],
+    indent: "off"
   }
 };
