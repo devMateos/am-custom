@@ -17,7 +17,13 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 header {
+    z-index: 1;
     background: var(--main-white);
     position: fixed;
     display: flex;
@@ -88,7 +94,49 @@ header {
     }
 }
 
-main {
+.mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 90vh;
+    top: 10vh;
+    left: calc(-100% - 24px);
+    padding: 0 3.5rem;
+    transition: 500ms;
+    background-color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+
+    & ul {
+        list-style: none;
+        padding: 4rem 0;
+    }
+
+    & li {
+        margin: 1rem 1.5rem;
+    }
+
+    & .mobile-menu--sections {
+        border-bottom: 2px solid var(--main-black);
+    }
+
+    & .mobile-menu--sections a {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: var(--main-black);
+    }
+
+    & .mobile-menu--contact-info a {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--main-black);
+    }
+}
+
+.slide-rigth {
+    left: 0;
+}
+
+/* main {
     & .about-us {
         width: 100vw;
         height: 100vh;
@@ -155,4 +203,4 @@ main {
             }
         }
     }
-}
+} */
