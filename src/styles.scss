@@ -25,7 +25,8 @@ a {
 header {
     z-index: 1;
     background: var(--main-white);
-    position: fixed;
+    position: sticky;
+    top: 0;
     display: flex;
     width: 100%;
     min-width: 320px;
@@ -33,6 +34,7 @@ header {
     align-items: center;
     justify-content: space-between;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 300ms;
 
     & .menu-button {
         background: transparent;
@@ -94,6 +96,10 @@ header {
     }
 }
 
+.hide-header {
+    top: -11vh;
+}
+
 .mobile-menu {
     position: fixed;
     width: 100vw;
@@ -119,7 +125,7 @@ header {
         border-bottom: 2px solid var(--main-black);
     }
 
-    & .mobile-menu--sections a {
+    & .mobile-menu--sections li {
         font-size: 2.4rem;
         font-weight: 600;
         color: var(--main-black);
@@ -139,7 +145,7 @@ header {
 main {
     & section {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
     }
 
     & .about-us {
@@ -207,7 +213,7 @@ main {
     }
 
     & .services {
-        padding: 0 2.4rem;
+        padding: 4rem 2.4rem;
 
         & h3 {
             font-size: 1.6rem;
@@ -223,7 +229,7 @@ main {
 
         & .services--title {
             text-align: center;
-            margin-top: 4rem;
+            /* margin-top: 4rem; */
 
             & h2 {
                 font-size: 2.2rem;

@@ -13,8 +13,8 @@ module.exports = {
   rules: {
     quotes: ["error", "double"],
     semi: ["error", "always"],
+    indent: "off",
     "comma-dangle": ["error", "only-multiline"],
-    "space-before-function-paren": ["error", "never"],
-    indent: "off"
+    "space-before-function-paren": "never"
   }
 };
