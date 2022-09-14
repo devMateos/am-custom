@@ -137,10 +137,12 @@ header {
 }
 
 main {
-    & .about-us {
+    & section {
         width: 100vw;
         height: 100vh;
+    }
 
+    & .about-us {
         & .about-us--hero {
             width: inherit;
             height: inherit;
@@ -200,6 +202,67 @@ main {
                     text-align: center;
                     color: var(--main-white);
                 }
+            }
+        }
+    }
+
+    & .services {
+        padding: 0 2.4rem;
+
+        & h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--main-black);
+        }
+
+        & p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+
+        & .services--title {
+            text-align: center;
+            margin-top: 4rem;
+
+            & h2 {
+                font-size: 2.2rem;
+                font-weight: 700;
+                color: var(--main-black);
+                margin-bottom: .8rem;
+            }
+        }
+
+        & .services--info {
+            &>div {
+                margin: 2.4rem 0;
+
+                &>* {
+                    margin: .8rem;
+                }
+            }
+
+            .services--icon {
+                height: 3rem;
+                width: 3rem;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .spare--icon {
+                background-image: url(./assets/icons/tire.svg);
+            }
+
+            .maintenance-icon {
+                background-image: url(./assets/icons/car_repair.svg);
+            }
+
+            .repairs-icon {
+                background-image: url(./assets/icons/tools.svg);
+            }
+
+            .upholstery-icon {
+                background-image: url(./assets/icons/needle.svg);
             }
         }
     }
