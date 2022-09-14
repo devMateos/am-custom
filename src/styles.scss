@@ -318,10 +318,8 @@ main {
             background-image: url(./assets/icons/whatsapp_b&w.svg);
         }
 
-        & .contact-us--map {
-            width: 30rem;
-            height: 30rem;
-            background-color: var(--soft-gray);
+        & iframe {
+            margin-top: .8rem;
         }
     }
 }
