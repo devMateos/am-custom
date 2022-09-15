@@ -111,6 +111,7 @@ header {
     background-color: var(--main-white);
     display: flex;
     flex-direction: column;
+    z-index: 1;
 
     & ul {
         list-style: none;
@@ -209,6 +210,16 @@ main {
                     line-height: 17px;
                     text-align: center;
                     color: var(--main-white);
+                }
+
+                & p {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    color: var(--main-white);
+                    text-align: center;
+                    margin: 0 1.8rem;
+                    position: relative;
+                    top: 5.6rem;
                 }
             }
         }
