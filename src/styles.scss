@@ -17,6 +17,11 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
