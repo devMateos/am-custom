@@ -19,10 +19,10 @@ logo.addEventListener("click", () => {
     document.querySelector(".about-us").scrollIntoView({ behavior: "smooth" });
 });
 servicesButton.addEventListener("click", () => {
-    document.querySelector(".services").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".services").scrollIntoView({ behavior: "smooth", block: "center" });
 });
 contactButton.addEventListener("click", () => {
-    document.querySelector(".contact-us").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".contact-us").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 aboutUsMobileMenuButton.addEventListener("click", () => {
@@ -33,12 +33,12 @@ aboutUsMobileMenuButton.addEventListener("click", () => {
 servicesMobileMenuButton.addEventListener("click", () => {
     menuButton.classList.remove("nav-open");
     mobileMenu.classList.remove("slide-rigth")
-    document.querySelector(".services").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".services").scrollIntoView({ behavior: "smooth", block: "center" });
 });
 contactMobileMenuButton.addEventListener("click", () => {
     menuButton.classList.remove("nav-open");
     mobileMenu.classList.remove("slide-rigth")
-    document.querySelector(".contact-us").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".contact-us").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 let lastScrollTop = 0;
