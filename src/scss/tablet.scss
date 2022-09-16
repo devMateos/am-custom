@@ -25,3 +25,42 @@ header {
         }
     }
 }
+
+main {
+    & .about-us {
+        & .about-us--hero {
+            & .about-us--hero--transparency {
+                & .about-us--buttons {
+                    flex-direction: row;
+
+                    & .about-us--services-button,
+                    .about-us--contact-button {
+                        margin: 5rem 2rem 0 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    & .services {
+        height: 48rem;
+
+        & .services--info {
+            margin: 0 2.4rem;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+
+    & .contact-us {
+        height: 88rem;
+
+        .mobile-map {
+            display: none;
+        }
+
+        .tablet-map {
+            display: flex;
+        }
+    }
+}

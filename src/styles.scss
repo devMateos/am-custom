@@ -186,39 +186,44 @@ main {
                     text-align: center;
                 }
 
-                & .about-us--services-button {
-                    width: 201px;
-                    height: 45px;
-                    background: var(--main-white);
-                    border: none;
-                    border-radius: 5px;
-                    margin-top: 3.2rem;
+                & .about-us--buttons {
+                    display: flex;
+                    flex-direction: column;
 
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 17px;
-                    text-align: center;
-                    color: var(--main-black);
-                }
+                    & .about-us--services-button {
+                        width: 201px;
+                        height: 45px;
+                        background: var(--main-white);
+                        border: none;
+                        border-radius: 5px;
+                        margin-top: 3.2rem;
 
-                & .about-us--contact-button {
-                    width: 201px;
-                    height: 45px;
-                    background: var(--main-black);
-                    border: none;
-                    border-radius: 5px;
-                    margin-top: 2.4rem;
-                    border: 1px solid #FFFFFF;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: center;
+                        color: var(--main-black);
+                    }
 
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 17px;
-                    text-align: center;
-                    color: var(--main-white);
+                    & .about-us--contact-button {
+                        width: 201px;
+                        height: 45px;
+                        background: var(--main-black);
+                        border: none;
+                        border-radius: 5px;
+                        margin-top: 2.4rem;
+                        border: 1px solid #FFFFFF;
+
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: center;
+                        color: var(--main-white);
+                    }
                 }
 
                 & p {
@@ -348,6 +353,10 @@ main {
 
         & iframe {
             margin-top: .8rem;
+        }
+
+        & .tablet-map {
+            display: none;
         }
     }
 }
