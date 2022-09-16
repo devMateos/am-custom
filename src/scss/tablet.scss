@@ -29,6 +29,8 @@ header {
 main {
     & .about-us {
         & .about-us--hero {
+            background-position: bottom;
+
             & .about-us--hero--transparency {
                 & .about-us--buttons {
                     flex-direction: row;
