@@ -16,7 +16,7 @@ header {
 
             & li {
                 list-style: none;
-                font-size: 2.2rem;
+                font-size: 1.8rem;
                 font-weight: 600;
                 color: var(--main-black);
                 margin: 0 2rem;
@@ -65,4 +65,8 @@ main {
             display: flex;
         }
     }
+}
+
+.active {
+    color: var(--red);
 }

@@ -58,6 +58,7 @@ contactMobileMenuButton.addEventListener("click", () => {
     document.querySelector(".contact-us").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
+/* Hide/show header while scrolling */
 let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
     const st = window.pageYOffset || document.documentElement.scrollTop;
@@ -68,3 +69,29 @@ window.addEventListener("scroll", function () {
     }
     lastScrollTop = st <= 0 ? 0 : st;
 }, false);
+
+/* Change color of navbar items */
+let aboutUs = document.querySelector(".about-us");
+let services = document.querySelector(".services");
+let contactUs = document.querySelector(".contact-us");
+document.addEventListener("scroll", () => {
+    if (window.scrollY >= aboutUs.getBoundingClientRect().top) {
+        navAboutUs.classList.add("active");
+        navServices.classList.remove("active");
+        navContact.classList.remove("active");
+    }
+})
+document.addEventListener("scroll", () => {
+    if (window.scrollY >= services.getBoundingClientRect().top) {
+        navServices.classList.add("active");
+        navAboutUs.classList.remove("active");
+        navContact.classList.remove("active");
+    }
+})
+document.addEventListener("scroll", () => {
+    if (window.scrollY >= contactUs.getBoundingClientRect().top) {
+        navContact.classList.add("active");
+        navAboutUs.classList.remove("active");
+        navServices.classList.remove("active");
+    }
+})
