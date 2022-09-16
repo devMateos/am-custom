@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.scss">
   <link rel="stylesheet" href="./scss/tablet.scss" media="(min-width: 640px)">
+  <link rel="stylesheet" href="./scss/desktop.scss" media="(min-width: 1024px)">
   <script type="module" src="./main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=loadMap"></script>
 </head>
@@ -28,6 +29,17 @@
         <li class="nav--contact">Contáctanos</li>
       </ul>
     </nav>
+    <div class="header--contact">
+      <a href="https://api.whatsapp.com/send?phone=34608114476" class="header--contact--whatsapp">
+        <img src="./assets/icons/whatsapp_b&w_header.svg" alt="" class="header--whatsapp-icon">
+        <div>608114476</div>
+      </a>
+      <a href="" class="header--contact--email">
+        <img src="./assets/icons/email_header.svg" alt="">
+        <div class="header--email-icon"></div>
+        <div>a.m.custom.correo@gmail.com</div>
+      </a>
+    </div>
   </header>
   <aside class="mobile-menu">
     <ul class="mobile-menu--sections">
@@ -60,21 +72,22 @@
       </div>
       <div class="services--info">
         <div class="services--info--spare">
-          <div class="services--icon spare--icon"></div>
+          <img src="./assets/icons/tire.svg" alt="">
           <h3>Recambios</h3>
           <p>Realizamos cambios de neumáticos, suspensión y frenos</p>
         </div>
         <div class="services--info--maintenance">
-          <div class="services--icon maintenance-icon"></div>
+          <img src="./assets/icons/car_repair.svg" alt="">
           <h3>Mantenimiento</h3>
           <p>Mantenimiento general y de cambios automáticos</p>
         </div>
         <div class="services--info--repairs">
-          <div class="services--icon repairs-icon"></div>
+          <img src="./assets/icons/tools.svg" alt="">
           <h3>Reparaciones</h3>
           <p>Reparaciones de techos panorámicos, car audio, sensores de aparcamiento y cámara</p>
         </div>
         <div class="services--info--upholstery">
+          <img src="./assets/icons/needle.svg" alt="">
           <div class="services--icon upholstery-icon"></div>
           <h3>Tapicería</h3>
           <p>Tapizado de paños de puertas, sillones, techos, volantes, cubiertas para descapotable, etc.</p>
@@ -85,17 +98,17 @@
       <h2>Contáctanos</h2>
       <p>A través de nuestro email</p>
       <div class="contact-us--email">
-        <div class="email-icon contact--icon"></div>
+        <img src="./assets/icons/email.svg" alt="">
         <p>a.m.custom.correo@gmail.com</p>
       </div>
       <p>En nuestra cuenta de Instagram:</p>
       <div class="contact-us--social-media">
-        <div class="ig-icon contact--icon"></div>
+        <img src="./assets/icons/instagram.svg" alt="">
         <p>a.m.custom_store</p>
       </div>
       <p>O pide presupuesto cómodamente a través de Whatsapp:</p>
       <div class="contact-us--whatsapp">
-        <div class="whatsapp-icon contact--icon"></div>
+        <img src="./assets/icons/whatsapp_b&w.svg" alt="">
         <p>608114476</p>
       </div>
       <p>También puedes encontrarnos en el Polígono la Ventilla, 46, 11660, Prado del Rey (Cádiz)</p>
@@ -105,7 +118,7 @@
   </main>
   <footer>
     <ul>
-      <li>A.M. Custom - Todos los derechos reservados</li>
+      <li>A.M. Custom</li>
       <li><a href="">Aviso legal</a></li>
       <li><a href="">Política de cookies</a></li>
     </ul>

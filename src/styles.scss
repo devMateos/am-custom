@@ -111,6 +111,10 @@ header {
     & nav {
         display: none;
     }
+
+    & .header--contact {
+        display: none;
+    }
 }
 
 .hide-header {
@@ -232,6 +236,14 @@ main {
                         text-align: center;
                         color: var(--main-white);
                     }
+
+                    & .about-us--services-button:hover {
+                        background-color: var(--soft-gray);
+                    }
+
+                    & .about-us--contact-button:hover {
+                        background-color: var(--dark-gray);
+                    }
                 }
 
                 & p {
@@ -281,29 +293,10 @@ main {
                 &>* {
                     margin: .8rem;
                 }
-            }
 
-            .services--icon {
-                height: 3rem;
-                width: 3rem;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            .spare--icon {
-                background-image: url(./assets/icons/tire.svg);
-            }
-
-            .maintenance-icon {
-                background-image: url(./assets/icons/car_repair.svg);
-            }
-
-            .repairs-icon {
-                background-image: url(./assets/icons/tools.svg);
-            }
-
-            .upholstery-icon {
-                background-image: url(./assets/icons/needle.svg);
+                & img {
+                    margin: 0;
+                }
             }
         }
     }
@@ -334,29 +327,10 @@ main {
             margin: .8rem 0;
         }
 
-        & .contact--icon {
-            height: 3rem;
-            width: 3rem;
-            background-repeat: no-repeat;
-            background-position: center;
+        & img {
             margin-right: .8rem;
-        }
-
-        & .email-icon {
-            background-image: url(./assets/icons/email.svg);
-        }
-
-        & .ig-icon {
-            background-image: url(./assets/icons/instagram.svg);
-            background-size: cover;
-        }
-
-        & .fb-icon {
-            background-image: url(./assets/icons/facebook.svg);
-        }
-
-        & .whatsapp-icon {
-            background-image: url(./assets/icons/whatsapp_b&w.svg);
+            max-width: 3rem;
+            max-height: 3rem;
         }
 
         & iframe {
@@ -388,6 +362,10 @@ footer {
         height: 10rem;
         list-style: none;
         text-align: center;
+    }
+
+    & :nth-child(1) {
+        margin-bottom: .8rem;
     }
 
     & a {

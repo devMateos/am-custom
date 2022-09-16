@@ -1,0 +1,59 @@
+header {
+    height: 8vh;
+
+    & .header--contact {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin-right: 4.5rem;
+        gap: 0.4rem;
+
+        & a {
+            color: var(--main-black);
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        & .header--contact--whatsapp {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            & .header--whatsapp-icon {
+                width: 1.8rem;
+                height: 1.8rem;
+                margin-right: 0.5rem;
+            }
+        }
+
+        & .header--contact--email {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            & .header--email-icon {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+main {
+    & .about-us {
+        height: 92vh;
+    }
+
+    & .services {
+        height: 32rem;
+
+        & .services--info {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin-top: 2.4rem;
+        }
+    }
+}
+
+.mobile_whatsapp_button {
+    display: none;
+}
