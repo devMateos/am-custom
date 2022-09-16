@@ -1,3 +1,4 @@
+/* DOM manipulation variables */
 const menuButton = document.querySelector(".menu-button");
 const mobileMenu = document.querySelector(".mobile-menu");
 const header = document.querySelector(".header");
@@ -10,11 +11,17 @@ const aboutUsMobileMenuButton = document.querySelector(".mobile-menu--about-us")
 const servicesMobileMenuButton = document.querySelector(".mobile-menu--services");
 const contactMobileMenuButton = document.querySelector(".mobile-menu--contact-us");
 
+const navAboutUs = document.querySelector(".nav--about-us");
+const navServices = document.querySelector(".nav--services");
+const navContact = document.querySelector(".nav--contact");
+
+/* Mobile menu button animation */
 menuButton.addEventListener("click", () => {
     menuButton.classList.toggle("nav-open");
     mobileMenu.classList.toggle("slide-rigth");
 });
 
+/* Sections navigation */
 logo.addEventListener("click", () => {
     document.querySelector(".about-us").scrollIntoView({ behavior: "smooth" });
 });
@@ -22,6 +29,16 @@ servicesButton.addEventListener("click", () => {
     document.querySelector(".services").scrollIntoView({ behavior: "smooth", block: "center" });
 });
 contactButton.addEventListener("click", () => {
+    document.querySelector(".contact-us").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+navAboutUs.addEventListener("click", () => {
+    document.querySelector(".about-us").scrollIntoView({ behavior: "smooth" });
+});
+navServices.addEventListener("click", () => {
+    document.querySelector(".services").scrollIntoView({ behavior: "smooth", block: "center" });
+});
+navContact.addEventListener("click", () => {
     document.querySelector(".contact-us").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 

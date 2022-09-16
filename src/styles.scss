@@ -99,6 +99,10 @@ header {
         max-height: 80%;
         margin-right: 4.5rem;
     }
+
+    & nav {
+        display: none;
+    }
 }
 
 .hide-header {
