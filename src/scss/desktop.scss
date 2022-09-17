@@ -41,6 +41,11 @@ header {
 main {
     & .about-us {
         height: 92vh;
+
+        & .about-us--hero {
+            background-image: url(https://i.postimg.cc/DfbqJt1D/hero-img-desktop-compressed.jpg);
+            background-position: center;
+        }
     }
 
     & .services {
