@@ -153,7 +153,8 @@ header {
         color: var(--main-black);
     }
 
-    & .mobile-menu--contact-info a {
+    & .mobile-menu--contact-info a,
+    div {
         font-size: 1.6rem;
         font-weight: 500;
         color: var(--main-black);
@@ -330,7 +331,8 @@ main {
                 align-items: center;
                 margin: .8rem 0;
 
-                & a {
+                & a,
+                div {
                     display: flex;
                     margin-top: .8rem;
                     align-items: center;

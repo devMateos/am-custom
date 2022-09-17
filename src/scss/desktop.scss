@@ -8,7 +8,8 @@ header {
         margin-right: 4.5rem;
         gap: 0.4rem;
 
-        & a {
+        & a,
+        div {
             color: var(--main-black);
             font-size: 1.4rem;
             font-weight: 400;
