@@ -52,6 +52,28 @@ main {
             margin-top: 2.4rem;
         }
     }
+
+    & .contact-us {
+        & .contact-us--info {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 2rem;
+
+            &>div {
+                max-width: 26rem;
+                justify-content: space-evenly;
+            }
+        }
+
+        .tablet-map {
+            display: none;
+        }
+
+        .desktop-map {
+            display: flex;
+        }
+    }
 }
 
 .mobile_whatsapp_button {
