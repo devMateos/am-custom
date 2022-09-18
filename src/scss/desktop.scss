@@ -72,12 +72,9 @@ main {
             }
         }
 
-        .tablet-map {
-            display: none;
-        }
-
-        .desktop-map {
-            display: flex;
+        .map {
+            width: 800px;
+            height: 600px;
         }
     }
 }

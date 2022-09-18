@@ -62,12 +62,9 @@ main {
     & .contact-us {
         height: 88rem;
 
-        .mobile-map {
-            display: none;
-        }
-
-        .tablet-map {
-            display: flex;
+        .map {
+            width: 600px;
+            height: 500px;
         }
     }
 }
