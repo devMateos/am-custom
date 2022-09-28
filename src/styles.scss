@@ -173,7 +173,7 @@ header {
 main {
     & section {
         width: 100vw;
-        height: 64rem;
+        height: 72rem;
     }
 
     & .about-us {
@@ -282,19 +282,25 @@ main {
 
         & .services--title {
             text-align: center;
+            margin-bottom: 4.8rem;
             /* margin-top: 4rem; */
 
             & h2 {
                 font-size: 2.2rem;
                 font-weight: 700;
                 color: var(--main-black);
-                margin-bottom: .8rem;
+                margin-bottom: 1.6rem;
             }
         }
 
         & .services--info {
             &>div {
                 margin: 2.4rem 0;
+
+                &>img {
+                    width: 25px;
+                    height: 25px;
+                }
 
                 &>* {
                     margin: .8rem;
@@ -323,7 +329,7 @@ main {
             color: var(--main-white);
             font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 1.6rem;
+            margin-bottom: 3.2rem;
             margin-top: 4rem;
         }
 
@@ -363,7 +369,7 @@ main {
 
 footer {
     width: 100vw;
-    height: 20vh;
+    height: 8rem;
     background-color: var(--dark-gray);
     color: var(--main-white);
     font-size: 1.2rem;
@@ -377,7 +383,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         width: 30rem;
-        height: 10rem;
         list-style: none;
         text-align: center;
     }
@@ -397,12 +402,12 @@ footer {
     position: -webkit-sticky;
     position: sticky;
     bottom: .8rem;
-    left: calc(100% - 5.6rem);
-    width: 4.8rem;
-    height: 4.8rem;
+    left: calc(100% - 7.2rem);
+    width: 5.6rem;
+    height: 5.6rem;
     background-image: url(./assets/icons/whatsapp_color.svg);
     background-size: cover;
-    margin-top: -4.8rem;
+    margin-top: -7rem;
 }
 
 @media (min-width: 640px) {
@@ -535,12 +540,12 @@ footer {
         }
 
         & .services {
-            height: 32rem;
+            height: 48rem;
 
             & .services--info {
                 display: grid;
                 grid-template-columns: 25% 25% 25% 25%;
-                margin-top: 2.4rem;
+                margin-top: 9.6rem;
             }
         }
 
