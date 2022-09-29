@@ -491,6 +491,20 @@ footer {
     header {
         height: 8vh;
 
+        ul {
+            /*             position: relative;
+            left: 4rem; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 50vw;
+
+            & li {
+                width: 130px;
+            }
+
+        }
+
         & .header--contact {
             display: flex;
             flex-direction: column;
